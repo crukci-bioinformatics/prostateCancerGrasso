@@ -33,7 +33,7 @@ groups[grep('benign', pd$characteristics_ch2, perl=TRUE)] = "Benign"
 groups[grep('localized', pd$characteristics_ch2, perl=TRUE)] = "HormomeDependant"
 groups[grep('metastatic', pd$characteristics_ch2, perl=TRUE)] = "CastrateResistant"
 
-pd <- data.frame(pd$geo_accession, Group=groups)
+pd <- data.frame(geo_accession=pd$geo_accession, Group=groups)
 
 fd <- fData(geoData[[1]])[,c("ID","GENE","GENE_SYMBOL")]
 
