@@ -45,7 +45,7 @@ pData(geoData) <- pd
 fData(geoData) <- fd
 
 grasso <- geoData
-save(grasso, file="../data/grasso.rda")
+save(grasso, file="data/grasso.rda",compress="xz")
 
 ```
 
