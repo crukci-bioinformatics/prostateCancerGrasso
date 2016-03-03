@@ -2,13 +2,12 @@ Package: prostateCancerGrasso
 Type: Package
 Title: Prostate Cancer Data
 Version: 0.0.99
-Date: 2015-09-10
+Date: 2016-02-29
 Author: Mark Dunning
 Maintainer: Mark Dunning <mark.dunning@cruk.cam.ac.uk>
-Description: A Bioconductor data package for the Grasso dataset
-License: GPL 2.0
+Description: A Bioconductor data package for the Grasso (2012) Prostate Cancer dataset.
+License: GPL (>= 2)
 LazyData: TRUE
-VignetteBuilder: knitr
 Depends: Biobase, R (>= 2.10) 
-Suggests: BiocStyle, knitr, GEOquery, dplyr
-biocViews: GEO, MicroarrayData
+Suggests: GEOquery, dplyr, org.Hs.eg.db,tidyr
+biocViews: ExperimentData, ExpressionData,GEO, MicroarrayData, CancerData, ProstateCancerData

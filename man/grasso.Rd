@@ -2,7 +2,7 @@
     \name{grasso}
     \alias{grasso}
     \title{The Grasso Cohort from U. Michigan}
-    \format{a \code{ExpressionSet} instance, 1 row per Illumina Huamnv4 probe.}
+    \format{a \code{ExpressionSet} instance, 1 row per microarray probe.}
     \source{
       GSE35988
     }
