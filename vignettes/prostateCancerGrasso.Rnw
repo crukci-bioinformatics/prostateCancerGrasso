@@ -11,7 +11,7 @@
 
 In this document, I describe how the GEO data entry for the Varambally data was processed and saved into an object for analysis in Bioconductor. First of all load the relevant libraries for grabbing and manipulaing the data
 
-<<>>=
+<<eval=FALSE>>=
 library(GEOquery)
 library(dplyr)
 library(tidyr)
@@ -21,7 +21,7 @@ library(tidyr)
 
 Now use the `getGEO` function with the correct ID
 
-<<>>=
+<<eval=FALSE>>=
 geoData <- getGEO("GSE35988")
 geoData
 @
@@ -29,7 +29,7 @@ geoData
 
 The phenoData contains lots of metadata from GEO that probably won't be useful for our analysis
 
-<<>>=
+<<eval=FALSE>>=
 pd <- rbind(pData(geoData[[1]]),pData(geoData[[2]]))
 
 groups = NULL
