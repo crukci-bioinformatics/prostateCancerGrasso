@@ -11,26 +11,25 @@
 
 In this document, I describe how the GEO data entry for the Varambally data was processed and saved into an object for analysis in Bioconductor. First of all load the relevant libraries for grabbing and manipulaing the data
 
-
-
-```{r}
+<<>>=
 library(GEOquery)
 library(dplyr)
 library(tidyr)
 
-```
+@
+
 
 Now use the `getGEO` function with the correct ID
 
-```{r}
-
+<<>>=
 geoData <- getGEO("GSE35988")
 geoData
-```
+@
+
 
 The phenoData contains lots of metadata from GEO that probably won't be useful for our analysis
 
-```{r}
+<<>>=
 pd <- rbind(pData(geoData[[1]]),pData(geoData[[2]]))
 
 groups = NULL
@@ -51,6 +50,10 @@ fData(geoData) <- fd
 
 grasso <- geoData
 save(grasso, file="data/grasso.rda",compress="xz")
+@
+
+
+
 
 
 
