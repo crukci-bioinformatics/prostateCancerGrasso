@@ -56,7 +56,4 @@ save(grasso, file="data/grasso.rda",compress="xz")
 @
 
 
-
-
-
 \end{document}
